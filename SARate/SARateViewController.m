@@ -204,8 +204,11 @@
     
     UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:_disadvantagesAlertTitle message:_disadvantagesAlertMessage delegate:nil cancelButtonTitle:_okText otherButtonTitles:nil];
     [alertView show];
-    [self sendMail];
-    
+    if (self.url) {
+        [[UIApplication sharedApplication] openURL:self.url];
+    } else {
+        [self sendMail];
+    }
 }
 
 

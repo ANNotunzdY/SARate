@@ -61,6 +61,7 @@
     _mySARateViewController.emailSubject = self.emailSubject;
     _mySARateViewController.emailText = self.emailText;
     _mySARateViewController.emailErrorAlertText = self.emailErrorAlertText;
+    _mySARateViewController.url = self.url;
     _mySARateViewController.okText = self.okText;
     _mySARateViewController.minAppStoreRaiting = self.minAppStoreRaiting;
     
